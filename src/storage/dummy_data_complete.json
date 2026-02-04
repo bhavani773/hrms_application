@@ -1,0 +1,39 @@
+{
+  "positions": [
+    {"id": "550e8400-e29b-41d4-a716-446655440001", "title": "Software Engineer", "department": "Engineering", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Experience Letter\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440002", "title": "HR Manager", "department": "Human Resources", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Education Certificate\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440003", "title": "Sales Executive", "department": "Sales", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"Photo\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440004", "title": "Finance Analyst", "department": "Finance", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Bank Proof\", \"UAN\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440005", "title": "Marketing Manager", "department": "Marketing", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Education Certificate\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440006", "title": "Operations Manager", "department": "Operations", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"ESIC\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440007", "title": "Data Scientist", "department": "Engineering", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Experience Letter\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440008", "title": "Customer Support", "department": "Support", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"Photo\"]"}
+  ],
+  "document_requirements": [
+    {"document_type": "Aadhaar", "is_mandatory": true, "description": "Aadhaar Card", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "PAN", "is_mandatory": true, "description": "PAN Card", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Address Proof", "is_mandatory": true, "description": "Address Proof Document", "expiry_applicable": true, "grace_period_days": 30},
+    {"document_type": "Bank Proof", "is_mandatory": true, "description": "Bank Account Proof", "expiry_applicable": true, "grace_period_days": 30},
+    {"document_type": "Education Certificate", "is_mandatory": false, "description": "Educational Qualification Certificate", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Experience Letter", "is_mandatory": false, "description": "Previous Employment Experience Letter", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Photo", "is_mandatory": true, "description": "Passport Size Photo", "expiry_applicable": true, "grace_period_days": 365},
+    {"document_type": "UAN", "is_mandatory": false, "description": "Universal Account Number", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "ESIC", "is_mandatory": false, "description": "ESIC Card", "expiry_applicable": true, "grace_period_days": 30}
+  ],
+  "compliance_requirements": [
+    {"rule_name": "expiry_warning", "department": null, "threshold_days": 30, "escalation_days": 7, "scoring_weight": 1},
+    {"rule_name": "mandatory_docs", "department": null, "threshold_days": 0, "escalation_days": 3, "scoring_weight": 2},
+    {"rule_name": "engineering_specific", "department": "Engineering", "threshold_days": 45, "escalation_days": 10, "scoring_weight": 1}
+  ],
+  "employees": [
+    {"id": "650e8400-e29b-41d4-a716-446655440001", "employee_id": "EMP001", "first_name": "Rajesh", "last_name": "Kumar", "email": "rajesh.kumar@company.com", "phone": "+91-9876543210", "department": "Engineering", "position_id": "550e8400-e29b-41d4-a716-446655440001", "hire_date": "2023-01-15T00:00:00", "status": "active"},
+    {"id": "650e8400-e29b-41d4-a716-446655440002", "employee_id": "EMP002", "first_name": "Priya", "last_name": "Sharma", "email": "priya.sharma@company.com", "phone": "+91-9876543211", "department": "Human Resources", "position_id": "550e8400-e29b-41d4-a716-446655440002", "hire_date": "2023-02-01T00:00:00", "status": "active"}
+  ],
+  "employee_documents": [
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440001", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2023-01-16T10:00:00", "verified_date": "2023-01-17T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440001", "document_type": "PAN", "status": "verified", "expiry_date": null, "submitted_date": "2023-01-16T10:30:00", "verified_date": "2023-01-17T14:30:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440001", "document_type": "Education Certificate", "status": "pending", "expiry_date": null, "submitted_date": null, "verified_date": null},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440002", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2023-02-02T10:00:00", "verified_date": "2023-02-03T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440002", "document_type": "Address Proof", "status": "expired", "expiry_date": "2024-01-15", "submitted_date": "2023-02-05T09:00:00", "verified_date": "2023-02-06T11:00:00"}
+  ]
+}

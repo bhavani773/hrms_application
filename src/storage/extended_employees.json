@@ -1,0 +1,21 @@
+{
+  "additional_employees": [
+    {"id": "650e8400-e29b-41d4-a716-446655440011", "employee_id": "EMP011", "first_name": "Sanjay", "last_name": "Verma", "email": "sanjay.verma@company.com", "phone": "+91-9876543220", "department": "Sales", "position_id": "550e8400-e29b-41d4-a716-446655440003", "hire_date": "2023-11-01T00:00:00", "status": "active"},
+    {"id": "650e8400-e29b-41d4-a716-446655440012", "employee_id": "EMP012", "first_name": "Meera", "last_name": "Iyer", "email": "meera.iyer@company.com", "phone": "+91-9876543221", "department": "Marketing", "position_id": "550e8400-e29b-41d4-a716-446655440005", "hire_date": "2023-11-15T00:00:00", "status": "active"},
+    {"id": "650e8400-e29b-41d4-a716-446655440013", "employee_id": "EMP013", "first_name": "Karan", "last_name": "Malhotra", "email": "karan.malhotra@company.com", "phone": "+91-9876543222", "department": "Engineering", "position_id": "550e8400-e29b-41d4-a716-446655440001", "hire_date": "2023-12-01T00:00:00", "status": "active"},
+    {"id": "650e8400-e29b-41d4-a716-446655440014", "employee_id": "EMP014", "first_name": "Pooja", "last_name": "Agarwal", "email": "pooja.agarwal@company.com", "phone": "+91-9876543223", "department": "Finance", "position_id": "550e8400-e29b-41d4-a716-446655440004", "hire_date": "2024-01-10T00:00:00", "status": "active"},
+    {"id": "650e8400-e29b-41d4-a716-446655440015", "employee_id": "EMP015", "first_name": "Rahul", "last_name": "Chopra", "email": "rahul.chopra@company.com", "phone": "+91-9876543224", "department": "Operations", "position_id": "550e8400-e29b-41d4-a716-446655440006", "hire_date": "2024-01-20T00:00:00", "status": "active"}
+  ],
+  "additional_documents": [
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440011", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2023-11-02T10:00:00", "verified_date": "2023-11-03T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440011", "document_type": "PAN", "status": "pending", "expiry_date": null, "submitted_date": null, "verified_date": null},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440012", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2023-11-16T10:00:00", "verified_date": "2023-11-17T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440012", "document_type": "Address Proof", "status": "verified", "expiry_date": "2024-11-15", "submitted_date": "2023-11-18T09:00:00", "verified_date": "2023-11-19T11:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440013", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2023-12-02T10:00:00", "verified_date": "2023-12-03T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440013", "document_type": "Education Certificate", "status": "pending", "expiry_date": null, "submitted_date": null, "verified_date": null},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440014", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2024-01-11T10:00:00", "verified_date": "2024-01-12T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440014", "document_type": "Bank Proof", "status": "expired", "expiry_date": "2024-01-01", "submitted_date": "2024-01-13T09:00:00", "verified_date": "2024-01-14T11:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440015", "document_type": "Aadhaar", "status": "verified", "expiry_date": null, "submitted_date": "2024-01-21T10:00:00", "verified_date": "2024-01-22T14:00:00"},
+    {"employee_id": "650e8400-e29b-41d4-a716-446655440015", "document_type": "ESIC", "status": "verified", "expiry_date": "2024-07-20", "submitted_date": "2024-01-23T09:00:00", "verified_date": "2024-01-24T11:00:00"}
+  ]
+}

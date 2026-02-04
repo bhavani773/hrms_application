@@ -1,0 +1,28 @@
+{
+  "positions": [
+    {"id": "550e8400-e29b-41d4-a716-446655440001", "title": "Software Engineer", "department": "Engineering", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Experience Letter\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440002", "title": "HR Manager", "department": "Human Resources", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Education Certificate\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440003", "title": "Sales Executive", "department": "Sales", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"Photo\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440004", "title": "Finance Analyst", "department": "Finance", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Bank Proof\", \"UAN\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440005", "title": "Marketing Manager", "department": "Marketing", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Education Certificate\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440006", "title": "Operations Manager", "department": "Operations", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"ESIC\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440007", "title": "Data Scientist", "department": "Engineering", "required_documents": "[\"Aadhaar\", \"PAN\", \"Education Certificate\", \"Experience Letter\", \"Bank Proof\"]"},
+    {"id": "550e8400-e29b-41d4-a716-446655440008", "title": "Customer Support", "department": "Support", "required_documents": "[\"Aadhaar\", \"PAN\", \"Address Proof\", \"Bank Proof\", \"Photo\"]"}
+  ],
+  "document_requirements": [
+    {"document_type": "Aadhaar", "is_mandatory": true, "description": "Aadhaar Card", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "PAN", "is_mandatory": true, "description": "PAN Card", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Address Proof", "is_mandatory": true, "description": "Address Proof Document", "expiry_applicable": true, "grace_period_days": 30},
+    {"document_type": "Bank Proof", "is_mandatory": true, "description": "Bank Account Proof", "expiry_applicable": true, "grace_period_days": 30},
+    {"document_type": "Education Certificate", "is_mandatory": false, "description": "Educational Qualification Certificate", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Experience Letter", "is_mandatory": false, "description": "Previous Employment Experience Letter", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "Photo", "is_mandatory": true, "description": "Passport Size Photo", "expiry_applicable": true, "grace_period_days": 365},
+    {"document_type": "UAN", "is_mandatory": false, "description": "Universal Account Number", "expiry_applicable": false, "grace_period_days": 0},
+    {"document_type": "ESIC", "is_mandatory": false, "description": "ESIC Card", "expiry_applicable": true, "grace_period_days": 30}
+  ],
+  "compliance_requirements": [
+    {"rule_name": "expiry_warning", "department": null, "threshold_days": 30, "escalation_days": 7, "scoring_weight": 1},
+    {"rule_name": "mandatory_docs", "department": null, "threshold_days": 0, "escalation_days": 3, "scoring_weight": 2},
+    {"rule_name": "engineering_specific", "department": "Engineering", "threshold_days": 45, "escalation_days": 10, "scoring_weight": 1}
+  ]
+}
